@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundScript : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
-public AudioClip musicClipOne;
+  public AudioClip musicClipOne;
 
 public AudioClip musicClipTwo;
 
@@ -47,13 +47,5 @@ void Update()
         {
           musicSource.loop = false;
         }
-    if (Input.GetKeyDown(KeyCode.V))
-    {
-        musicSource.volume = 0.5f;
-    }
-    if (Input.GetKeyUp(KeyCode.V))
-    {
-        musicSource.volume = 1.0f;
-    }
-    }
+   }
 }
